@@ -17,3 +17,12 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:flashpolicy]]
         end
+
+  3. Run it as standalone
+
+        mix run --no-halt
+
+  4. Test with bash script
+
+        perl -e 'printf "<policy-file-request/>%c",0' | nc localhost 843
+
